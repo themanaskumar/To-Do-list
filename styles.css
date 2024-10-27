@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Oswald:wght@200..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +6,9 @@
 body{
     height: 87vh;
     background: linear-gradient(to bottom right, aqua, rgb(0, 255, 157));
-    margin-top: 70px;
+    margin-top: 75px;
     overflow: auto;
+    font-family: "Arima", system-ui;
 }
 nav{
     width: 99vw;
@@ -17,8 +19,9 @@ nav{
     box-shadow: 2px 2px 4px rgba(206, 206, 206, 0.6);
     position: fixed;
     top: 0px;
+    font-family: "Oswald", serif;
 }
-nav div{
+nav h1{
     margin: auto;
 }
 .red{
@@ -54,6 +57,7 @@ button{
     cursor: pointer;
     background-color: aqua;
     border: 2px solid rgb(101, 101, 101);
+    font-family: "Oswald", serif;
 }
 .newTaskForm{
     margin: 20px auto;
@@ -78,6 +82,8 @@ button{
 }
 p{
     max-width: 75%;
+    font-family: "Arima", system-ui;
+    font-size: 0.7em;
 }
 #completedTasks .tasks p{
     text-decoration: line-through;

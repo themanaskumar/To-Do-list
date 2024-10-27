@@ -5,15 +5,17 @@ textarea.addEventListener("input", () => {
         addTaskButton.disabled = true;
         addTaskButton.classList.add("disabled");
         addTaskButton.classList.remove("enabled");
+        addTaskButton.removeAttribute("onclick");
     }else{
         addTaskButton.disabled = false;
         addTaskButton.classList.remove("disabled");
         addTaskButton.classList.add("enabled");
+        addTaskButton.setAttribute("onclick", "addTask()");
     }
 });
 
 textarea.addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' && textarea.value != "") {
         event.preventDefault();
         addTask();
     }
@@ -35,6 +37,7 @@ function addTask(){
     outerdiv.appendChild(para)
     outerdiv.appendChild(button);
     pending.appendChild(outerdiv);
+    addTaskButton.removeAttribute("onclick");
 }
 
 function taskCompleted(button){
