@@ -5,7 +5,7 @@
 body{
     height: 87vh;
     background: linear-gradient(to bottom right, aqua, rgb(0, 255, 157));
-    margin-top: 65px;
+    margin-top: 70px;
     overflow: auto;
 }
 nav{
