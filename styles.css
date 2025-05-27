@@ -6,6 +6,7 @@
 body{
     height: 87vh;
     background: linear-gradient(to bottom right, aqua, rgb(0, 255, 157));
+    background-size: cover;
     margin-top: 75px;
     overflow: auto;
     font-family: "Arima", system-ui;
@@ -32,7 +33,7 @@ nav h1{
     max-width: 50vw;
     background-color: rgba(255, 255, 255, 0.652);
     filter: blur(50%);
-    box-shadow: 5px 5px 5px rgba(99, 99, 99, 0.6);
+    box-shadow: 0px 0px 7px rgba(99, 99, 99, 0.6);
     border-radius: 10px;
     padding: 20px 15px;
     display: flex;
@@ -57,6 +58,11 @@ button{
     background-color: aqua;
     border: 2px solid rgb(101, 101, 101);
     font-family: "Oswald", serif;
+
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px rgba(99, 99, 99, 0.6);
 }
 .newTaskForm{
     margin: 20px auto;
